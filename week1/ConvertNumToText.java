@@ -3,7 +3,7 @@ public class ConvertNumToText {
     public static void main(String[] args) {
         int number;
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Please type a number(max upto 9 digits): ");
+        System.out.println("Please type a number: ");
         try {
             number = scanner.nextInt();
             if (number == 0) {
@@ -34,14 +34,14 @@ public class ConvertNumToText {
             numberStr = numberStr.substring(1);
             return "minus " + numberToWord(Integer.parseInt(numberStr));
         }
-        if ((number / 1000000) > 0) {
+        /*if ((number / 1000000) > 0) {
             words += numberToWord(number / 1000000) + " million ";
             number %= 1000000;
         }
         if ((number / 1000) > 0) {
             words += numberToWord(number / 1000) + " thousand ";
             number %= 1000;
-        }
+        }*/
         if ((number / 100) > 0) {
             words += numberToWord(number / 100) + " hundred ";
             number %= 100;

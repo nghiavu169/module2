@@ -2,11 +2,9 @@ import java.util.Scanner;
 
 public class BMI {
     public static void main(String[] args) {
-
         double weight, height, bmi;
 
         Scanner scanner = new Scanner(System.in);
-
         System.out.print("Your weight (in kilogram):");
         weight = scanner.nextDouble();
         System.out.print("Your height (in meter):");
